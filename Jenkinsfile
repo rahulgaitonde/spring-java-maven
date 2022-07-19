@@ -27,8 +27,8 @@ pipeline{
                         [
                             artifactId: 'spring-boot-complete', 
                             classifier: '', 
-                            file: "app.jar", 
-                            type: 'war'
+                            file: "/tmp/app.jar", 
+                            type: 'jar'
                         ]
                     ], 
                     credentialsId: 'nexus', 
