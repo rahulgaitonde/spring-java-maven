@@ -8,7 +8,7 @@ RUN mvn package
 FROM openjdk:8-jdk-alpine
 ARG JAR_FILE=target/*.jar
 COPY --from=MAVEN_TOOL_CHAIN /tmp/target/*.jar app.jar
-ENTRYPOINT ["java","-jar","/app.jar"]
+ENTRYPOINT ["java","-jar","app.jar"]
 
 
 
