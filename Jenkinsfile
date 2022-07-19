@@ -25,14 +25,14 @@ pipeline{
 
                     nexusArtifactUploader artifacts: [
                         [
-                            artifactId: 'wizard', 
+                            artifactId: 'spring-boot-complete', 
                             classifier: '', 
-                            file: "/tmp/wizard.war", 
+                            file: "app.jar", 
                             type: 'war'
                         ]
                     ], 
                     credentialsId: 'nexus', 
-                    groupId: 'com.codepipes.wizard', 
+                    groupId: 'com.example', 
                     nexusUrl: 'localhost:8081', 
                     nexusVersion: 'nexus3', 
                     protocol: 'http', 
