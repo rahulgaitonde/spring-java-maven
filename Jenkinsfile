@@ -1,4 +1,4 @@
-@Library('java') _
+@Library('spring') _
 
 pipeline{
     agent any
