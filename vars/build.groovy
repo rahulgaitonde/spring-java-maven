@@ -8,8 +8,8 @@ def build(dockerImageName)
 
 def run(dockerImageName)
 {
-    sh "docker run -t --name javamaven -d ${dockerImageName}"
+    sh "docker run -t --name spring -d ${dockerImageName}"
     sh "docker ps"
-    sh "docker cp javamaven:/app.jar /tmp"
+    sh "docker cp spring:/app.jar /tmp"
 }
 
